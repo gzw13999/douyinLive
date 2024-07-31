@@ -1,4 +1,4 @@
-module github.com/jwwsjlm/douyinLive
+module github.com/gzw13999/douyinLive
 
 go 1.22.5
 
@@ -35,3 +35,4 @@ require (
 	golang.org/x/text v0.15.0 // indirect
 	golang.org/x/tools v0.21.0 // indirect
 )
+replace github.com/gzw13999/douyinLive => ../douyinLive

@@ -1,7 +1,7 @@
 package douyinlive
 
 import (
-	"github.com/jwwsjlm/douyinLive/generated/douyin"
+	"github.com/gzw13999/douyinLive/generated/douyin"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 	"log"

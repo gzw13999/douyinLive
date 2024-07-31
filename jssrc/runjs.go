@@ -1,7 +1,7 @@
 package jssrc
 
 import (
-	"github.com/jwwsjlm/douyinLive/global"
+	"github.com/gzw13999/douyinLive/global"
 	"os"
 
 	"github.com/dop251/goja"

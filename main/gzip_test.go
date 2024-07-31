@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"compress/gzip"
-	"github.com/jwwsjlm/douyinLive"
+	"github.com/gzw13999/douyinLive"
 	"io"
 
 	"testing"

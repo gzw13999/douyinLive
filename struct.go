@@ -3,8 +3,8 @@ package douyinlive
 import (
 	"compress/gzip"
 	"github.com/gorilla/websocket"
+	"github.com/gzw13999/douyinLive/generated/douyin"
 	"github.com/imroc/req/v3"
-	"github.com/jwwsjlm/douyinLive/generated/douyin"
 	"net/http"
 	"sync"
 )

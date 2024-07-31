@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/hex"
 	"github.com/gorilla/websocket"
-	"github.com/jwwsjlm/douyinLive"
-	"github.com/jwwsjlm/douyinLive/generated/douyin"
-	"github.com/jwwsjlm/douyinLive/utils"
+	"github.com/gzw13999/douyinLive"
+	"github.com/gzw13999/douyinLive/generated/douyin"
+	"github.com/gzw13999/douyinLive/utils"
 	"github.com/spf13/pflag"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

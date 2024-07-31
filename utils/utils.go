@@ -9,7 +9,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/elliotchance/orderedmap"
-	"github.com/jwwsjlm/douyinLive/generated/douyin"
+	"github.com/gzw13999/douyinLive/generated/douyin"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"math/rand"
 	"strconv"
