@@ -1,11 +1,11 @@
 package main
 
 import (
-	douyinlive "DouyinLive"
-	"DouyinLive/generated/douyin"
-	"DouyinLive/utils"
 	"encoding/hex"
 	"github.com/gorilla/websocket"
+	"github.com/jwwsjlm/douyinLive"
+	"github.com/jwwsjlm/douyinLive/generated/douyin"
+	"github.com/jwwsjlm/douyinLive/utils"
 	"github.com/spf13/pflag"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

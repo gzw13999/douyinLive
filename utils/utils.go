@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"DouyinLive/generated/douyin"
 	"bytes"
 	"compress/gzip"
 	"crypto/md5"
@@ -10,6 +9,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/elliotchance/orderedmap"
+	"github.com/jwwsjlm/douyinLive/generated/douyin"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"math/rand"
 	"strconv"

@@ -1,10 +1,10 @@
 package douyinlive
 
 import (
-	"DouyinLive/generated/douyin"
 	"compress/gzip"
 	"github.com/gorilla/websocket"
 	"github.com/imroc/req/v3"
+	"github.com/jwwsjlm/douyinLive/generated/douyin"
 	"net/http"
 	"sync"
 )

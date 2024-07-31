@@ -1,9 +1,9 @@
 package main
 
 import (
-	douyinlive "DouyinLive"
 	"bytes"
 	"compress/gzip"
+	"github.com/jwwsjlm/douyinLive"
 	"io"
 
 	"testing"
