@@ -264,61 +264,61 @@ func (d *DouyinLive) ProcessingMessage(response *douyin.Response) {
 			}
 		}
 
-		switch data.Method {
-
-		case "WebcastChatMessage":
-			msg := &douyin.ChatMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Println("聊天msg", msg.User.Id, msg.User.NickName, msg.Content)
-		case "WebcastGiftMessage":
-			msg := &douyin.GiftMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Println("礼物msg", msg.User.Id, msg.User.NickName, msg.Gift.Name, msg.ComboCount)
-		case "WebcastLikeMessage":
-			msg := &douyin.LikeMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Println("点赞msg", msg.User.Id, msg.User.NickName, msg.Count)
-		case "WebcastMemberMessage":
-			msg := &douyin.MemberMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Println("进场msg", msg.User.Id, msg.User.NickName, msg.User.Gender)
-		case "WebcastSocialMessage":
-			msg := &douyin.SocialMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Println("关注msg", msg.User.Id, msg.User.NickName)
-		case "WebcastRoomUserSeqMessage":
-			msg := &douyin.RoomUserSeqMessage{}
-			proto.Unmarshal(data.Payload, msg)
-			log.Printf("房间人数msg 当前观看人数:%v,累计观看人数:%v\n", msg.Total, msg.TotalPvForAnchor)
-		case "WebcastFansclubMessage":
-			//msg := &douyin.FansclubMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("粉丝团msg %v\n", msg.Content)
-		case "WebcastControlMessage":
-			//msg := &douyin.ControlMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("直播间状态消息%v", msg.Status)
-		case "WebcastEmojiChatMessage":
-			//msg := &douyin.EmojiChatMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("表情消息%vuser:%vcommon:%vdefault_content:%v", msg.EmojiId, msg.User, msg.Common, msg.DefaultContent)
-		case "WebcastRoomStatsMessage":
-			//msg := &douyin.RoomStatsMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("直播间统计msg%v", msg.DisplayLong)
-		case "WebcastRoomMessage":
-			//msg := &douyin.RoomMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("【直播间msg】直播间id%v", msg.Common.RoomId)
-		case "WebcastRoomRankMessage":
-			//msg := &douyin.RoomRankMessage{}
-			//proto.Unmarshal(data.Payload, msg)
-			//log.Printf("直播间排行榜msg%v", msg.RanksList)
-
-		default:
-			//d.emit(Default, data.Payload)
-			//log.Println("payload:", method, hex.EncodeToString(data.Payload))
-		}
+		//switch data.Method {
+		//
+		//case "WebcastChatMessage":
+		//	msg := &douyin.ChatMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Println("聊天msg", msg.User.Id, msg.User.NickName, msg.Content)
+		//case "WebcastGiftMessage":
+		//	msg := &douyin.GiftMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Println("礼物msg", msg.User.Id, msg.User.NickName, msg.Gift.Name, msg.ComboCount)
+		//case "WebcastLikeMessage":
+		//	msg := &douyin.LikeMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Println("点赞msg", msg.User.Id, msg.User.NickName, msg.Count)
+		//case "WebcastMemberMessage":
+		//	msg := &douyin.MemberMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Println("进场msg", msg.User.Id, msg.User.NickName, msg.User.Gender)
+		//case "WebcastSocialMessage":
+		//	msg := &douyin.SocialMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Println("关注msg", msg.User.Id, msg.User.NickName)
+		//case "WebcastRoomUserSeqMessage":
+		//	msg := &douyin.RoomUserSeqMessage{}
+		//	proto.Unmarshal(data.Payload, msg)
+		//	log.Printf("房间人数msg 当前观看人数:%v,累计观看人数:%v\n", msg.Total, msg.TotalPvForAnchor)
+		//case "WebcastFansclubMessage":
+		//	//msg := &douyin.FansclubMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("粉丝团msg %v\n", msg.Content)
+		//case "WebcastControlMessage":
+		//	//msg := &douyin.ControlMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("直播间状态消息%v", msg.Status)
+		//case "WebcastEmojiChatMessage":
+		//	//msg := &douyin.EmojiChatMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("表情消息%vuser:%vcommon:%vdefault_content:%v", msg.EmojiId, msg.User, msg.Common, msg.DefaultContent)
+		//case "WebcastRoomStatsMessage":
+		//	//msg := &douyin.RoomStatsMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("直播间统计msg%v", msg.DisplayLong)
+		//case "WebcastRoomMessage":
+		//	//msg := &douyin.RoomMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("【直播间msg】直播间id%v", msg.Common.RoomId)
+		//case "WebcastRoomRankMessage":
+		//	//msg := &douyin.RoomRankMessage{}
+		//	//proto.Unmarshal(data.Payload, msg)
+		//	//log.Printf("直播间排行榜msg%v", msg.RanksList)
+		//
+		//default:
+		//	//d.emit(Default, data.Payload)
+		//	//log.Println("payload:", method, hex.EncodeToString(data.Payload))
+		//}
 
 	}
 	//fmt.Println("消息", message)
